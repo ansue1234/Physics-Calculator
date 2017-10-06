@@ -6,20 +6,37 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in); // Reading from System.in
-        System.out.print("How much money do you have: ");
+        String choice = input.nextLine();
+        System.out.println("Choose subject: ");
+        System.out.println("Kinematics----------------1");
+        System.out.println("Forces--------------------2");
+        
 
-        double amountInDollars = 0;
-        String amountInString = input.nextLine();
+        double choiceNum = 0;
         boolean isValidNum = false;
 
-        if (amountInString.equals("") || amountInString.equals(" ")) { // Empty string check
+        if (choice.equals("") || choice.equals(" ")) { // Empty string check
             System.out.println("Empty String");
-        } else if (amountInString.matches("-?\\d+(\\.\\d+)?")) { // valid double check
-            amountInDollars = Double.parseDouble(amountInString);
+        } else if (choice.matches("-?\\d+(\\.\\d+)?")) { // valid double check
+            choiceNum = Double.parseDouble(choice);
             isValidNum = true;
         } else {
             System.out.println("Number Format error");
         }
+        
+        if(isValidNum){
+          switch(choiceNum){
+            case 1:
+              Kinematics projectile = new Kinematics("Kinematics");
+              System.out.println(projectile.getTitle);
+              break;
+            case 2:
+              Forces extortion = new Forces("Forces");
+              System.out.println(projectile.getTitle);
+              break;
+          }
+        }
+        
 
     }
 }
