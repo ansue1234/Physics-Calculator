@@ -1,7 +1,9 @@
-import java.util.InputMismatchException; 
+
+//import java.util.InputMismatchException; 
 import java.util.Scanner;
 
 public class Kinematics extends Subject{
+  private Scanner input;
   public Kinematics(String a){
     title = a;
   }
@@ -10,7 +12,7 @@ public class Kinematics extends Subject{
     System.out.println("1 dimension---------------1");
     System.out.println("2 dimensions--------------2");
     
-    Scanner input = new Scanner(System.in); // Reading from System.in
+    input = new Scanner(System.in); // Reading from System.in
     String choice = input.nextLine();
 
     int choiceNum = 0; //input validater

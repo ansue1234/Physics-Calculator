@@ -1,10 +1,11 @@
 import java.util.Scanner;
-import java.util.InputMismatchException;
+//import java.util.InputMismatchException;
 
 public class Variable{ //blue print for variables
   private String tag;
   private double value;
   private boolean known;
+  private Scanner input;
   public Variable(String a){ // name of variable
     tag = a;
     known = false;
@@ -26,16 +27,16 @@ public class Variable{ //blue print for variables
   }
   
   public void validate(){ // checking if the variable is know or unknown
-    Scanner input = new Scanner(System.in); // Reading from System.in
+    input = new Scanner(System.in); // Reading from System.in
     String val = input.nextLine();
-    boolean isValidNum = false;
+    //boolean isValidNum = false;
 
     if (val.equals("") || val.equals(" ")) { // Empty string check
         System.out.println("Empty");
     } else if (val.matches("-?\\d+(\\.\\d+)?")) { // valid double check
       value = Double.parseDouble(val);
       known = true;
-      isValidNum = true;
+     // isValidNum = true;
     } else {
       System.out.println("Number Format error");
     }
