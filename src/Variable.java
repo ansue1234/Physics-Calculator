@@ -25,6 +25,9 @@ public class Variable{ //blue print for variables
   public boolean status(){ // return whether the variable is known or not
     return known;
   }
+  public void setStatus(boolean a){ // return whether the variable is known or not
+	known = a;
+  }
   
   public void validate(){ // checking if the variable is know or unknown
     input = new Scanner(System.in); // Reading from System.in

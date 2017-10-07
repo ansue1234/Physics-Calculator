@@ -32,7 +32,7 @@ public class Kinematics extends Subject{
         case 1:
           Type oneDim = new OneDimension("1 Dimension");
           System.out.println(oneDim.getName());
-          oneDim.equation();
+          oneDim.math();
           break;
         case 2:
           System.out.println("Here is 2 Dimensions");
