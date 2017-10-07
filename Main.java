@@ -22,7 +22,7 @@ public class Main {
             System.out.println("Number Format error");
         }
         
-        if(isValidNum){
+        if(isValidNum){ //choices of subjects Kinematics etc.
           switch(choiceNum){
             case 1:
               Subject projectile = new Kinematics("Kinematics");
