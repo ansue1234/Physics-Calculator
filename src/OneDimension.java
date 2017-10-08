@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.lang.Math;
 
-//This is just a test
 
 public class OneDimension extends Type{ //place where math and the variable input is done in 1 dimension kinematics
   private Variable vo;

@@ -1,5 +1,3 @@
-
-
 public abstract class Type{ //basic blueprint of type of questions
   protected String name;
   abstract public void math(); //this is where all variable input and math will be performed
